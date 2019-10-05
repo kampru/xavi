@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pràctica 1</string>
+    <string name="password">Paraula de pas</string>
+    <string name="user">Entra el teu nom d\'usuari</string>
+    <string name="help">Ajuda</string>
+    <string name="creacompte">Crea compte</string>
+
+</resources>
