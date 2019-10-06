@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         Log.d(TAG,"debugging");
-        Toast.makeText(this,"primera app",Toast.LENGTH_LONG).show();
+        //Toast.makeText(this,"primera app",Toast.LENGTH_LONG).show();
 
         //métode inline botó3
         button3.setOnClickListener(new View.OnClickListener() {
