@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button button;
     EditText edtNom;
-    Button button2;
+    Button button3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,21 +27,26 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button= (Button) findViewById(R.id.btnBoto);
-        button2= (Button) findViewById(R.id.btnBoto2 );
+        button3= (Button) findViewById(R.id.btnBoto3 );
         edtNom=(EditText) findViewById(R.id.edtNom);
 
 
         Log.d(TAG,"debugging");
         Toast.makeText(this,"primera app",Toast.LENGTH_LONG).show();
 
-        /*button2.setOnClickListener(new View.OnClickListener() {
+        //métode inline botó3
+        button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               // Toast.makeText(this,"primera app",Toast.LENGTH_LONG).show();
+                Toast toast=Toast.makeText(getApplicationContext(),"Clica sign in",Toast.LENGTH_LONG);
+                toast.show();
+                Toast.makeText(MainActivity.this, "Signing in", Toast.LENGTH_LONG).show();
                 Log.d(TAG,"boto2");
 
             }
-        });*/
+        });
+
+
     }
 
     public void onClickHelp(View view){

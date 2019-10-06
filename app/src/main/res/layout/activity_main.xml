@@ -61,10 +61,16 @@
             android:id="@+id/btnBoto2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_weight="2"
+            android:layout_weight="1"
             android:onClick="onClickCreaCompte"
             android:text="@string/creacompte" />
 
+        <Button
+            android:id="@+id/btnBoto3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sign in" />
     </LinearLayout>
 
     <TextView
