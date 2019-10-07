@@ -17,10 +17,12 @@ public class HelpActivity extends AppCompatActivity {
         // Get the Intent that started this activity and extract the string
         Intent intent = getIntent();
         String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String nomBundle=intent.getStringExtra("NOM");
+
 
         // Capture the layout's TextView and set the string as its text
         TextView textView = findViewById(R.id.txtViewHelp);
-        //textView.setText(message);
+        textView.setText(message + "\n  "+ nomBundle);
 
     }
 }
