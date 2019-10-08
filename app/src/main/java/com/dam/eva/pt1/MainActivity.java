@@ -32,6 +32,19 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onStart:");
     }
 
+    //torna a ser visible , carregar dades
+    @Override
+    protected void onResume() {
+        super.onResume();
+    }
+
+
+    //perd el focus, parcialment amagat, guardar dades...
+    @Override
+    protected void onPause() {
+        super.onPause();
+    }
+
     @Override
     protected void onStop() {
         super.onStop();
@@ -42,15 +55,9 @@ public class MainActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-    @Override
-    protected void onPause() {
-        super.onPause();
-    }
 
-    @Override
-    protected void onResume() {
-        super.onResume();
-    }
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,9 +98,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
         FloatingActionButton fab = findViewById(R.id.fab);
-        //SipSession.Listener listener;
-        //fab.setOn
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
