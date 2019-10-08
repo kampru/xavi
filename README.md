@@ -1,3 +1,3 @@
-# CodeI
+# First code lines...
 
-Classes 26/9, 1/10, 3/10/19
+Classes 26/9, 1/10, 3/10/19, 8/10
